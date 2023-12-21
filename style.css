@@ -1,0 +1,65 @@
+body {
+	font-family: "Sevillana", cursive;
+	background-image: url(assets/background.jpg);
+	background-size: cover;
+}
+
+a {
+	font-size: 2rem;
+	color: aliceblue;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 5rem;
+	text-align: center;
+	color: darkblue;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-around;
+	margin: 3vh;
+}
+
+.article {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5vh;
+	overflow: hidden;
+	justify-content: center;
+	margin: 1vh;
+	padding: 3vh;
+}
+.article > img {
+	height: 300px;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: 1s;
+	display: block;
+	border-style: double;
+	border-color: aliceblue;
+	flex: 0 1 0;
+}
+
+.article > img:hover {
+	transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+	.nav-menu {
+		flex-direction: column;
+		align-items: center;
+	}
+	a {
+		margin: 0.5vh;
+		font-size: 1rem;
+	}
+	.article > img {
+		height: 200px;
+		border-radius: 5px;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+}
