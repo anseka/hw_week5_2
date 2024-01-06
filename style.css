@@ -43,7 +43,7 @@ h1 {
 }
 
 .article > img:hover {
-	transform: scale(1.2);
+	transform: scale(1.3);
 }
 
 @media (max-width: 800px) {
