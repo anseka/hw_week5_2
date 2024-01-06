@@ -23,23 +23,23 @@ h1 {
 }
 
 .article {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5vh;
-	overflow: hidden;
-	justify-content: center;
-	margin: 1vh;
-	padding: 3vh;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	/* grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); */
+	/* grid-auto-rows: auto; */
 }
+
 .article > img {
-	height: 300px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	cursor: pointer;
 	border-radius: 10px;
 	transition: 1s;
 	display: block;
 	border-style: double;
 	border-color: aliceblue;
-	flex: 0 1 0;
 }
 
 .article > img:hover {
